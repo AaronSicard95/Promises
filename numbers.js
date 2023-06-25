@@ -23,6 +23,7 @@ $form.addEventListener('submit',function(evt){
 })
 
 function getFacts(){
+    $factslist.innerHTML="";
     let numpromises = [];
     for (let num of numbers){
         numpromises.push(axios.get(`http://numbersapi.com/${num}`))
